@@ -1,0 +1,37 @@
+.slick-dots li button:before {
+  font-size: 24px !important;
+}
+slick-next {
+  right: -16px !important;
+}
+.item-text {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.item_button {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #f7849d;
+  text-align: left;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: 2px solid #f7849d;
+  background-color: transparent;
+  border-radius: 14px;
+  padding: 10px 16px;
+  width: 60%;
+}
+.slick-prev {
+  z-index: 100 !important;
+}
+.slick-dots {
+  display: none !important;
+}

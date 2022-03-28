@@ -1,0 +1,112 @@
+.carousel-control-prev {
+  display: none !important;
+}
+.carousel-control-next {
+  display: none !important;
+}
+.carousel-indicators [data-bs-target] {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  margin-bottom: 20px;
+}
+.text-content {
+  position: relative;
+}
+.carousel-item {
+  width: 100%;
+  height: 100vh !important;
+}
+.text-content h2 {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+}
+.text-content p {
+  font-family: "Gotham";
+  /* font-weight: 100; */
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.buttons {
+  position: relative;
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  max-width: 100%;
+}
+.buttons button {
+  border: 2px solid #ffffff !important;
+  box-sizing: border-box !important;
+  border-radius: 4px !important;
+  background-color: transparent;
+  color: white;
+  /* font-family: "Gotham"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  /* or 150% */
+  width: 214px;
+  height: 56px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons button span {
+  padding-right: 10px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  cursor: pointer !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2px;
+}
+.carousel-indicators [data-bs-target].active {
+  border: 2px solid #86909a !important;
+  box-sizing: border-box !important;
+  transform: rotate(-180deg) !important;
+  width: 28px;
+  height: 28px;
+  padding: 8px;
+  background-color: transparent;
+  position: relative;
+  top: 4px;
+}
+@media (max-width: 400px) {
+  .carousel-caption {
+    left: 0% !important;
+    right: 0% !important;
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .buttons {
+    /* margin-left: 4px; */
+  }
+}
