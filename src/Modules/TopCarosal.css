@@ -87,6 +87,7 @@
   justify-content: center;
   align-items: center;
   padding-left: 2px;
+  z-index: 999;
 }
 .carousel-indicators [data-bs-target].active {
   border: 2px solid #86909a !important;
@@ -106,7 +107,5 @@
     width: 90% !important;
     margin: 0 auto;
   }
-  .buttons {
-    /* margin-left: 4px; */
-  }
+  
 }

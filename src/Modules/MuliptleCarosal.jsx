@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import img1 from "../Assests/NationalAnthem.jpeg";
+import img1 from "../Assests/cover.jpeg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -138,8 +138,10 @@ export const MuliptleCarosal = () => {
                 style={{
                   width: "100%",
                   height: "170px",
-                  objectFit: "contain",
+                  objectFit: "cover",
                   marginBottom: "10px",
+                  // marginLeft: "10px",
+                  paddingRight: "10px",
                 }}
               />
               <p

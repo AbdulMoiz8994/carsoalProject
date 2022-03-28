@@ -10,6 +10,7 @@ export const TopCarosal = () => {
   let [toggle, setToggle] = useState(true);
   const [current, setCurrent] = useState(0);
   const vidRef = useRef(null);
+  console.log(vidRef);
   const btnToggle = () => {
     console.log(vidRef.current);
     if (vidRef.current.paused) {
@@ -22,7 +23,10 @@ export const TopCarosal = () => {
       vidRef.current.volume = 0.0;
     }
   };
-
+  // const endedFunc = (e) => {
+  //   console.log(e);
+  // };
+  console.log(current);
   const videoCarsoal = [
     {
       id: 0,
@@ -59,17 +63,18 @@ export const TopCarosal = () => {
       // ref: vidRef5,
     },
   ];
+
   return (
     // <div>
     <Carousel
-      interval={null}
+      // interval={null}
       className={"Caption"}
       onSelect={(e) => setCurrent(e)}
     >
       {videoCarsoal.map((videoobj) => {
         return (
           <Carousel.Item
-            interval={null}
+            interval={2000}
             key={videoobj.id}
             className={"carosualChild"}
           >
@@ -85,6 +90,7 @@ export const TopCarosal = () => {
                 width: "100%",
                 height: "100%",
               }}
+              // onEnded={endedFunc}
             />
             <Carousel.Caption className="text-content">
               <p>{videoobj.title}</p>
