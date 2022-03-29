@@ -6,10 +6,19 @@ import { Carousel } from "react-bootstrap";
 // import ReactPlayer from "react-player";
 import { FaGooglePlay, FaPlay, FaPause } from "react-icons/fa";
 import { BsApple } from "react-icons/bs";
+
 export const TopCarosal = () => {
+  // console.log(ele);
   let [toggle, setToggle] = useState(true);
   const [current, setCurrent] = useState(0);
   const vidRef = useRef(null);
+  // const rangeBtn = useRef(null);
+
+  // const updateTime = (e) => {
+  //   const input = document.querySelector("#progress");
+  //   input.value =
+  //     (vidRef.current.currentTime / vidRef.current.duration) * 100;
+  // };
   console.log(vidRef);
   const btnToggle = () => {
     console.log(vidRef.current);
@@ -26,6 +35,8 @@ export const TopCarosal = () => {
   // const endedFunc = (e) => {
   //   console.log(e);
   // };
+  // console.log(range);
+
   console.log(current);
   const videoCarsoal = [
     {
@@ -67,14 +78,14 @@ export const TopCarosal = () => {
   return (
     // <div>
     <Carousel
-      // interval={null}
+      interval={null}
       className={"Caption"}
       onSelect={(e) => setCurrent(e)}
     >
       {videoCarsoal.map((videoobj) => {
         return (
           <Carousel.Item
-            interval={2000}
+            // interval={null}
             key={videoobj.id}
             className={"carosualChild"}
           >
@@ -84,13 +95,14 @@ export const TopCarosal = () => {
               // width={"800px"}
               // height={"800px"}
               style={{
-                position: "fixed",
+                position: "absolute",
                 top: 0,
                 left: 0,
                 width: "100%",
                 height: "100%",
               }}
               // onEnded={endedFunc}
+              // onTimeUpdate={updateTime}
             />
             <Carousel.Caption className="text-content">
               <p>{videoobj.title}</p>
